@@ -266,76 +266,6 @@ The objective is not only to measure algorithm performance, but also to determin
 
 ---
 
-## Run AquaMind AI Locally
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/xmohamedtariq/AquaMind-AI.git
-```
-
-### 2. Enter the Project Directory
-
-```bash
-cd AquaMind-AI
-```
-
-### 3. Create a Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### 4. Activate the Virtual Environment
-
-#### Windows PowerShell
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-If PowerShell blocks script execution:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-#### Windows Command Prompt
-
-```cmd
-.venv\Scripts\activate
-```
-
-#### macOS / Linux
-
-```bash
-source .venv/bin/activate
-```
-
-### 5. Install Dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 6. Start the Application
-
-```bash
-python -m streamlit run app.py
-```
-
-### 7. Open the Local Dashboard
-
-Open:
-
-[http://localhost:8501](http://localhost:8501)
-
-> `localhost:8501` works only on the computer running the application.  
-> For public access, use the [AquaMind AI Live Demo](https://aquamindai.streamlit.app/).
-
----
-
 ## Repository Structure
 
 ```text
@@ -448,9 +378,6 @@ Areas of focus:
 
 **GitHub Repository**  
 [https://github.com/xmohamedtariq/AquaMind-AI](https://github.com/xmohamedtariq/AquaMind-AI)
-
-**Local Development URL**  
-[http://localhost:8501](http://localhost:8501)
 
 ---
 
