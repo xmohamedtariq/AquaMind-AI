@@ -14,17 +14,20 @@ The current prototype uses **synthetic hydraulic data** to demonstrate the compl
 
 ## Project Links
 
+### Live Prototype
+
+[Open AquaMind AI Live Demo](https://aquamindai.streamlit.app/)
+
 ### GitHub Repository
 
 [Open AquaMind AI Repository](https://github.com/xmohamedtariq/AquaMind-AI)
 
-### Local Prototype
+### Run Locally
 
-After running the application locally, open:
+After starting the application with:
 
-[http://localhost:8501](http://localhost:8501)
-
-> The local prototype URL works only on the computer where the AquaMind AI Streamlit application is running.
+```bash
+python -m streamlit run app.py
 
 ---
 
