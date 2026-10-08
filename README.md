@@ -2,116 +2,116 @@
 
 **AI-powered predictive water network intelligence for early leak-risk detection, anomaly monitoring, and smarter utility operations.**
 
-AquaMind AI is a functional browser-based prototype that demonstrates how pressure and flow signals can be transformed into operational intelligence for water utilities. The current version uses **synthetic hydraulic data** to simulate normal operation, pressure surge, and potential leak conditions.
+AquaMind AI is a browser-based prototype designed to demonstrate how pressure and flow data can be transformed into actionable operational intelligence for water utilities.
 
-> Current stage: prototype demonstration. Next milestone: validation with real utility data and a bounded field pilot.
+The current prototype uses **synthetic hydraulic data** to demonstrate the complete workflow from sensing and monitoring to anomaly detection, leak-risk assessment, and operator recommendations.
 
----
-
-## Live Demo
-
-Add your Streamlit link here after deployment:
-
-```text
-https://YOUR-APP-NAME.streamlit.app
-```
-
-## Project Repository
-
-```text
-https://github.com/YOUR-USERNAME/AquaMind-AI
-```
+> **Current Stage:** Functional prototype / Pre-pilot  
+> **Data:** Synthetic hydraulic data  
+> **Next Milestone:** Validation using real utility data and a controlled field pilot
 
 ---
 
-## What AquaMind AI Demonstrates
+## Project Links
 
-- Real-time style dashboard for pressure and flow monitoring
-- Synthetic water-network scenarios: normal operation, simulated leak, pressure surge
-- Zone-level anomaly signaling
+### GitHub Repository
+
+[Open AquaMind AI Repository](https://github.com/xmohamedtariq/AquaMind-AI)
+
+### Local Prototype
+
+After running the application locally, open:
+
+[http://localhost:8501](http://localhost:8501)
+
+> The local prototype URL works only on the computer where the AquaMind AI Streamlit application is running.
+
+---
+
+## The Problem
+
+Water utilities can experience hidden leaks and abnormal hydraulic behavior before failures become visible.
+
+Conventional monitoring systems often provide raw measurements or threshold-based alerts, while operators need earlier and more actionable information.
+
+AquaMind AI explores how pressure and flow signals can support:
+
+- Early anomaly detection
 - Leak-risk prioritization
-- Operator-focused recommendations
-- A clear Sense -> Analyze -> Act workflow
+- Zone-level monitoring
+- Faster operator response
+- Predictive water network management
 
 ---
 
-## Prototype Screenshot
+## The AquaMind AI Approach
 
-![AquaMind AI Dashboard Preview](assets/dashboard-preview.png)
+The prototype follows a simple operational workflow:
+
+### 1. Sense
+
+Collect or receive water-network measurements such as:
+
+- Pressure
+- Flow rate
+- Zone information
+- Time-series hydraulic behavior
+
+### 2. Analyze
+
+Process the signals to identify:
+
+- Abnormal pressure patterns
+- Unexpected flow behavior
+- Potential leak-risk conditions
+- Network anomalies
+
+### 3. Act
+
+Provide operators with:
+
+- Risk indicators
+- Affected-zone information
+- Operational alerts
+- Recommended response actions
 
 ---
 
-## Why It Matters
+## Current Prototype
 
-Water networks often collect sensor data, but operational decisions may still arrive late. AquaMind AI aims to act as a predictive intelligence layer on top of existing pressure and flow monitoring, helping operators identify abnormal patterns earlier and respond with clearer actions.
+The current AquaMind AI dashboard is implemented as an interactive **Streamlit** application.
+
+It demonstrates:
+
+- Multi-zone water network monitoring
+- Pressure and flow visualization
+- Simulated leak scenarios
+- Pressure surge scenarios
+- Leak-risk indicators
+- Anomaly alerts
+- Operator recommendations
+- Historical signal visualization
+
+The prototype currently uses **synthetic data** and should not be interpreted as a field-validated commercial deployment.
 
 ---
 
-## How It Works
+## Technology Stack
 
-1. **Sense** - reads pressure and flow patterns from a water-network zone.
-2. **Analyze** - detects abnormal hydraulic behavior using a prototype anomaly logic.
-3. **Act** - translates the insight into a risk level and recommended operator action.
+| Component | Technology |
+|---|---|
+| Application | Python |
+| User Interface | Streamlit |
+| Data Processing | Pandas |
+| Numerical Processing | NumPy |
+| Visualization | Plotly |
+| Current Data Source | Synthetic hydraulic data |
 
 ---
 
-## Run Locally
+## Run AquaMind AI Locally
+
+### 1. Clone the repository
 
 ```bash
-python -m venv .venv
-```
-
-Windows PowerShell:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the app:
-
-```bash
-python -m streamlit run app.py
-```
-
-Open:
-
-```text
-http://localhost:8501
-```
-
----
-
-## Deployment on Streamlit Community Cloud
-
-1. Create a public GitHub repository named `AquaMind-AI`.
-2. Upload `app.py`, `requirements.txt`, `README.md`, `.gitignore`, and the `assets/` folder.
-3. Go to Streamlit Community Cloud.
-4. Create a new app from this repository.
-5. Set the main file path to `app.py`.
-6. Choose a clear URL such as `aquamind-ai.streamlit.app` if available.
-
----
-
-## Transparency Notice
-
-This prototype currently uses synthetic data. It does **not** claim field-validated accuracy, commercial deployment, or real utility performance yet. The next milestone is a real-world pilot with utility data to measure detection precision, false alarms, lead time, localization error, and operator response usefulness.
-
----
-
-## Founder
-
-**Mohammed Tariq Al-Saqqaf**  
-Founder & Lead Innovator - AquaMind AI  
-Mechatronics engineering, sensing, control systems, and AI prototype execution.
-
----
-
-## License
-
-For evaluation, pitch review, and prototype demonstration purposes.
+git clone https://github.com/xmohamedtariq/AquaMind-AI.git
